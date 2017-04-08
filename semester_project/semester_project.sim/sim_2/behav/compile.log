@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/sum_elem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sum_elem
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/spt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity spt
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/mul1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mul1
