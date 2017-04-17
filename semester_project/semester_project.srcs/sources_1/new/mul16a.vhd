@@ -32,6 +32,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity mul16a is
     Port ( clk : in STD_LOGIC;
+           rst : in STD_LOGIC;
+           en : in STD_LOGIC;
            x : in STD_LOGIC_VECTOR (15 downto 0);
            y : in STD_LOGIC_VECTOR (15 downto 0);
            p : out STD_LOGIC_VECTOR (31 downto 0));
@@ -62,25 +64,45 @@ begin
 
 clk_write: process(clk)
 begin
+if en = '1' then
     if rising_edge(clk) then
-        reg1(15 downto 0) <= y;
-        reg1(31 downto 16) <= x;  
-        reg2(67 downto 0) <= output(67 downto 0);
-        reg3(69 downto 0) <= output(137 downto 68);   
-        reg4(71 downto 0) <= output(209 downto 138);
-        reg5(73 downto 0) <= output(283 downto 210);
-        reg6(75 downto 0) <= output(359 downto 284);
-        reg7(77 downto 0) <= output(437 downto 360);
-        reg8(79 downto 0) <= output(517 downto 438);
-        reg9(81 downto 0) <= output(599 downto 518);
-        reg10(83 downto 0) <= output(683 downto 600);
-        reg11(85 downto 0) <= output(769 downto 684);
-        reg12(87 downto 0) <= output(857 downto 770);
-        reg13(89 downto 0) <= output(947 downto 858);
-        reg14(91 downto 0) <= output(1039 downto 948);
-    end if;
+        if rst = '1' then
+            reg1(31 downto 0) <= (others => '0');  
+            reg2(67 downto 0) <= (others => '0');
+            reg3(69 downto 0) <= (others => '0');
+            reg4(71 downto 0) <= (others => '0'); 
+            reg5(73 downto 0) <= (others => '0');
+            reg6(75 downto 0) <= (others => '0');
+            reg7(77 downto 0) <= (others => '0');
+            reg8(79 downto 0) <= (others => '0');
+            reg9(81 downto 0) <= (others => '0');
+            reg10(83 downto 0) <= (others => '0');
+            reg11(85 downto 0) <= (others => '0');
+            reg12(87 downto 0) <= (others => '0');
+            reg13(89 downto 0) <= (others => '0');
+            reg14(91 downto 0) <= (others => '0');
+        else
+            reg1(15 downto 0) <= y;
+            reg1(31 downto 16) <= x;  
+            reg2(67 downto 0) <= output(67 downto 0);
+            reg3(69 downto 0) <= output(137 downto 68);   
+            reg4(71 downto 0) <= output(209 downto 138);
+            reg5(73 downto 0) <= output(283 downto 210);
+            reg6(75 downto 0) <= output(359 downto 284);
+            reg7(77 downto 0) <= output(437 downto 360);
+            reg8(79 downto 0) <= output(517 downto 438);
+            reg9(81 downto 0) <= output(599 downto 518);
+            reg10(83 downto 0) <= output(683 downto 600);
+            reg11(85 downto 0) <= output(769 downto 684);
+            reg12(87 downto 0) <= output(857 downto 770);
+            reg13(89 downto 0) <= output(947 downto 858);
+            reg14(91 downto 0) <= output(1039 downto 948);
+        end if;
+     end if;
+end if;
 end process clk_write;
 
+--input propagation
 output(31 downto 0) <= reg1(31 downto 0);
 output(99 downto 68) <= reg2(31 downto 0);
 output(169 downto 138) <= reg3(31 downto 0);

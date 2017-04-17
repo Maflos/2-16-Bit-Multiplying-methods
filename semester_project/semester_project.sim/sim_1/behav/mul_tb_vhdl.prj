@@ -2,6 +2,8 @@
 vhdl xil_defaultlib  "../../../semester_project.srcs/sources_1/new/sum_elem.vhd"
 vhdl xil_defaultlib  "../../../semester_project.srcs/sources_1/new/spt15.vhd"
 vhdl xil_defaultlib  "../../../semester_project.srcs/sources_1/new/mul16a.vhd"
+vhdl xil_defaultlib  "../../../semester_project.srcs/sources_1/new/mul16b.vhd"
+vhdl xil_defaultlib  "../../../semester_project.srcs/sources_1/new/main.vhd"
 vhdl xil_defaultlib  "../../../semester_project.srcs/sim_1/new/mul_tb.vhd"
 
 # Do not sort compile order

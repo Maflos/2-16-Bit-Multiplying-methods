@@ -41,6 +41,8 @@ signal clk : STD_LOGIC;
 signal x : STD_LOGIC_VECTOR (15 downto 0) := X"FFFF";
 signal y : STD_LOGIC_VECTOR (15 downto 0) := X"FFFF";
 signal p : STD_LOGIC_VECTOR (31 downto 0);
+signal rst: std_logic := '0';
+signal sel: std_logic := '1';
 constant CLK_PERIOD : TIME := 10 ns;
 
 begin
@@ -53,7 +55,9 @@ gen_clk: process
          wait for (CLK_PERIOD/2);
  end process gen_clk;
 
-dut: entity WORK.mul16a port map(clk => clk,
+dut: entity WORK.main port map(clk => clk,
+                               rst => rst,
+                               sel => sel,
                                x => x,
                                y => y,
                                p => p); 
@@ -61,30 +65,14 @@ dut: entity WORK.mul16a port map(clk => clk,
 test: process
 begin
      
-         wait for CLK_PERIOD;         
-         x <= x"1111";
-         y <= x"8001";      
+        wait for CLK_PERIOD;             
+         x <= x"FFFF";
+         y <= x"0001";
+         wait for CLK_PERIOD;             
          wait for CLK_PERIOD;
-         x <= x"AAAA";
-         y <= x"0001";                       
-         wait for CLK_PERIOD;                                     
-         wait for CLK_PERIOD;
-         wait for CLK_PERIOD; 
-         wait for CLK_PERIOD;               
-         wait for CLK_PERIOD;                       
-         wait for CLK_PERIOD;                                     
-         wait for CLK_PERIOD;
-         wait for CLK_PERIOD; 
-         wait for CLK_PERIOD;               
-         wait for CLK_PERIOD;                       
-         wait for CLK_PERIOD;                                     
-         wait for CLK_PERIOD;
-         wait for CLK_PERIOD;
-         wait for CLK_PERIOD;                       
-         wait for CLK_PERIOD;                                     
-         wait for CLK_PERIOD;
-         wait for CLK_PERIOD;
-
+         sel <= '0';
+         x <= x"FFFF";
+         y <= x"EEEE";                                       
    wait;               
 end process test;
 

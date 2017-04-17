@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1491676520">
-  <File Type="RDS-PROPCONSTRS" Name="mul1_drc_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1491841167">
   <File Type="PA-TCL" Name="mul1.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="mul1_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="mul1.vds"/>
   <File Type="RDS-UTIL" Name="mul1_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="mul1_utilization_synth.pb"/>
@@ -29,6 +29,20 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/mul16a.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/spt15.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mul16b.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

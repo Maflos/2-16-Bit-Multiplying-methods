@@ -4,5 +4,9 @@ INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/se
 INFO: [VRFC 10-307] analyzing entity spt15
 INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/mul16a.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mul16a
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/mul16b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mul16b
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity main
 INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_1/new/mul_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mul_tb

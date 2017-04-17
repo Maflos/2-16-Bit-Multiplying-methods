@@ -2,7 +2,9 @@
 2016.4
 Jan 23 2017
 19:37:30
-E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_1/new/mul_tb.vhd,1491677526,vhdl,,,,mul_tb,,,,,,,,
-E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/mul16a.vhd,1491677336,vhdl,E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_1/new/mul_tb.vhd,,,mul16a,,,,,,,,
+E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_1/new/mul_tb.vhd,1492423921,vhdl,,,,mul_tb,,,,,,,,
+E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/main.vhd,1492423797,vhdl,E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_1/new/mul_tb.vhd,,,main,,,,,,,,
+E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/mul16a.vhd,1492422457,vhdl,E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/main.vhd,,,mul16a,,,,,,,,
+E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/mul16b.vhd,1492422069,vhdl,E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/main.vhd,,,mul16b,,,,,,,,
 E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/spt15.vhd,1491677235,vhdl,E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/mul16a.vhd,,,spt15,,,,,,,,
-E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/sum_elem.vhd,1491028672,vhdl,E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/mul16a.vhd;E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/spt15.vhd,,,sum_elem,,,,,,,,
+E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/sum_elem.vhd,1491028672,vhdl,E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/mul16a.vhd;E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/mul16b.vhd;E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/spt15.vhd,,,sum_elem,,,,,,,,

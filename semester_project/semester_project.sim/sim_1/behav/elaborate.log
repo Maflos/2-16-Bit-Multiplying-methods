@@ -15,5 +15,7 @@ Compiling package ieee.std_logic_unsigned
 Compiling architecture behavioral of entity xil_defaultlib.sum_elem [sum_elem_default]
 Compiling architecture behavioral of entity xil_defaultlib.spt15 [spt15_default]
 Compiling architecture behavioral of entity xil_defaultlib.mul16a [mul16a_default]
+Compiling architecture behavioral of entity xil_defaultlib.mul16b [mul16b_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
 Compiling architecture behavioral of entity xil_defaultlib.mul_tb
 Built simulation snapshot mul_tb_behav
