@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../semester_project.srcs/sources_1/new/num4.vhd"
+vhdl xil_defaultlib  "../../../semester_project.srcs/sources_1/new/num2.vhd"
+vhdl xil_defaultlib  "../../../semester_project.srcs/sources_1/new/input_circuit.vhd"
+vhdl xil_defaultlib  "../../../semester_project.srcs/sim_2/new/input_tb.vhd"
+
+# Do not sort compile order
+nosort

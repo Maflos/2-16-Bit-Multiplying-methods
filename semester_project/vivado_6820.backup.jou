@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed May 03 19:29:27 2017
+# Process ID: 6820
+# Current directory: E:/My Programs/VHDL/semester_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8152 E:\My Programs\VHDL\semester_project\semester_project.xpr
+# Log file: E:/My Programs/VHDL/semester_project/vivado.log
+# Journal file: E:/My Programs/VHDL/semester_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/My Programs/VHDL/semester_project/semester_project.xpr}
+close [ open {E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd} w ]
+add_files {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_1/new/input_tb.vhd} w ]
+add_files -fileset sim_1 {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_1/new/input_tb.vhd}}
+remove_files  -fileset sim_1 {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_1/new/input_tb.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+file mkdir {E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new}
+close [ open {E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd} w ]
+add_files -fileset sim_2 {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd}}
+update_compile_order -fileset sim_2
+update_compile_order -fileset sim_2
+update_compile_order -fileset sim_2
+current_fileset -simset [ get_filesets sim_2 ]
+set_property top input_tb [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+launch_simulation -simset sim_2
+launch_simulation -simset sim_2
+launch_simulation -simset sim_2
+launch_simulation -simset sim_2
+launch_simulation -simset sim_2
+launch_simulation -simset sim_2
+launch_simulation -simset sim_2
+source input_tb.tcl
+close_sim
+launch_simulation -simset sim_2
+source input_tb.tcl
+close_sim
+set_property -name {xsim.simulate.runtime} -value {200ns} -objects [get_filesets sim_2]
+launch_simulation -simset sim_2
+source input_tb.tcl
+close_sim
+launch_simulation -simset sim_2
+source input_tb.tcl
+close_sim
+close [ open {E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd} w ]
+add_files {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd}}
+close [ open {E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd} w ]
+add_files {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd}}
+launch_simulation -simset sim_2
+launch_simulation -simset sim_2
+launch_simulation -simset sim_2
+source input_tb.tcl
+close_sim
+launch_simulation -simset sim_2
+source input_tb.tcl
+close_sim
+launch_simulation -simset sim_2
+source input_tb.tcl
+close_sim
+launch_simulation -simset sim_2
+launch_simulation -simset sim_2
+source input_tb.tcl
+close_sim
+launch_simulation -simset sim_2
+source input_tb.tcl
+close_sim
+launch_simulation -simset sim_2
+source input_tb.tcl
+close_sim
+import_files -norecurse {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/displ7seg.vhd}}
+add_files -fileset constrs_1 -norecurse C:/Users/Marian/Desktop/Nexys4DDR_Master.xdc
+import_files -fileset constrs_1 C:/Users/Marian/Desktop/Nexys4DDR_Master.xdc

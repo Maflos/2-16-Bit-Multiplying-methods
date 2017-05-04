@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu May 04 11:06:23 2017
+# Process ID: 5340
+# Current directory: E:/My Programs/VHDL/semester_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4132 E:\My Programs\VHDL\semester_project\semester_project.xpr
+# Log file: E:/My Programs/VHDL/semester_project/vivado.log
+# Journal file: E:/My Programs/VHDL/semester_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/My Programs/VHDL/semester_project/semester_project.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 762.898 ; gain = 154.305
+import_files -norecurse C:/Users/Marian/Downloads/MPG.vhd
+close [ open {E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/final.vhd} w ]
+add_files {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/final.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu May 04 14:44:00 2017] Launched synth_1...
+Run output will be captured here: E:/My Programs/VHDL/semester_project/semester_project.runs/synth_1/runme.log
+[Thu May 04 14:44:00 2017] Launched impl_1...
+Run output will be captured here: E:/My Programs/VHDL/semester_project/semester_project.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/My Programs/VHDL/semester_project/.Xil/Vivado-5340-DESKTOP-HPH0MN8/dcp/final.xdc]
+Finished Parsing XDC File [E:/My Programs/VHDL/semester_project/.Xil/Vivado-5340-DESKTOP-HPH0MN8/dcp/final.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.497 . Memory (MB): peak = 1066.605 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.503 . Memory (MB): peak = 1066.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1168.246 ; gain = 318.684
+close_design
+close_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1566.184 ; gain = 339.773
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 04 14:50:43 2017...

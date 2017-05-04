@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1491841167">
-  <File Type="PA-TCL" Name="mul1.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="mul1_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="mul1.vds"/>
-  <File Type="RDS-UTIL" Name="mul1_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="mul1_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="mul1.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="mul1_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="mul1_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1493898236">
+  <File Type="RDS-PROPCONSTRS" Name="final_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="final.tcl"/>
+  <File Type="RDS-RDS" Name="final.vds"/>
+  <File Type="RDS-UTIL" Name="final_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="final_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="final.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="final_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="final_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/sum_elem.vhd">
@@ -16,13 +16,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/spt.vhd">
+    <File Path="$PSRCDIR/sources_1/new/spt15.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/mul1.vhd">
+    <File Path="$PSRCDIR/sources_1/new/mul16b.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -30,33 +30,72 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/mul16a.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/spt15.vhd">
+    <File Path="$PSRCDIR/sources_1/new/num4.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/mul16b.vhd">
+    <File Path="$PSRCDIR/sources_1/new/num2.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/displ7seg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/displ7seg.vhd"/>
+        <Attr Name="ImportTime" Val="1487850944"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/MPG.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Marian/Downloads/MPG.vhd"/>
+        <Attr Name="ImportTime" Val="1493138405"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/main.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/input_circuit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/final.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="mul1"/>
+      <Option Name="TopModule" Val="final"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Marian/Desktop/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1418224684"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>

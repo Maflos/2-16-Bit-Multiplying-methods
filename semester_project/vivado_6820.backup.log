@@ -1,0 +1,960 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed May 03 19:29:27 2017
+# Process ID: 6820
+# Current directory: E:/My Programs/VHDL/semester_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8152 E:\My Programs\VHDL\semester_project\semester_project.xpr
+# Log file: E:/My Programs/VHDL/semester_project/vivado.log
+# Journal file: E:/My Programs/VHDL/semester_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/My Programs/VHDL/semester_project/semester_project.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 853.508 ; gain = 175.121
+close [ open {E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd} w ]
+add_files {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_1/new/input_tb.vhd} w ]
+add_files -fileset sim_1 {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_1/new/input_tb.vhd}}
+remove_files  -fileset sim_1 {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_1/new/input_tb.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+file mkdir {E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new}
+close [ open {E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd} w ]
+add_files -fileset sim_2 {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd}}
+update_compile_order -fileset sim_2
+update_compile_order -fileset sim_2
+update_compile_order -fileset sim_2
+current_fileset -simset [ get_filesets sim_2 ]
+set_property top input_tb [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+ERROR: [VRFC 10-91] std_logic is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:7]
+ERROR: [VRFC 10-91] std_logic is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:8]
+ERROR: [VRFC 10-91] std_logic_vector is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:9]
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:16]
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:18]
+ERROR: [VRFC 10-1412] syntax error near : [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:26]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:5]
+INFO: [VRFC 10-240] VHDL file E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+ERROR: [VRFC 10-91] std_logic is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:7]
+ERROR: [VRFC 10-91] std_logic is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:8]
+ERROR: [VRFC 10-91] std_logic_vector is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:9]
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:16]
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:18]
+ERROR: [VRFC 10-704] formal en has no actual or default value [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:22]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:5]
+INFO: [VRFC 10-240] VHDL file E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+ERROR: [VRFC 10-91] std_logic is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:7]
+ERROR: [VRFC 10-91] std_logic is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:8]
+ERROR: [VRFC 10-91] std_logic_vector is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:9]
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:16]
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:18]
+ERROR: [VRFC 10-91] en is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:22]
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:23]
+ERROR: [VRFC 10-91] number is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:24]
+ERROR: [VRFC 10-283] actual of formal out port number cannot be an expression [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:24]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:5]
+INFO: [VRFC 10-240] VHDL file E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+ERROR: [VRFC 10-91] std_logic is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:7]
+ERROR: [VRFC 10-91] std_logic is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:8]
+ERROR: [VRFC 10-91] std_logic_vector is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:9]
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:16]
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:18]
+ERROR: [VRFC 10-91] en is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:22]
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:23]
+ERROR: [VRFC 10-91] number is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:24]
+ERROR: [VRFC 10-283] actual of formal out port number cannot be an expression [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:24]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:5]
+INFO: [VRFC 10-240] VHDL file E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1360] signal cannot be unconstrained [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:14]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit input_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1360] signal cannot be unconstrained [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:14]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit input_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.num4 [num4_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_tb
+Built simulation snapshot input_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/My -notrace
+couldn't read file "E:/My": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May 03 19:39:54 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 892.164 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "input_tb_behav -key {Behavioral:sim_2:Functional:input_tb} -tclbatch {input_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source input_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'input_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 892.164 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.num4 [num4_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_tb
+Built simulation snapshot input_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/My -notrace
+couldn't read file "E:/My": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May 03 19:41:09 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "input_tb_behav -key {Behavioral:sim_2:Functional:input_tb} -tclbatch {input_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source input_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'input_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 892.164 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -name {xsim.simulate.runtime} -value {200ns} -objects [get_filesets sim_2]
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.num4 [num4_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_tb
+Built simulation snapshot input_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/My -notrace
+couldn't read file "E:/My": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May 03 19:41:53 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "input_tb_behav -key {Behavioral:sim_2:Functional:input_tb} -tclbatch {input_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source input_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'input_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 892.164 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.num4 [num4_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_tb
+Built simulation snapshot input_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/My -notrace
+couldn't read file "E:/My": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May 03 19:42:22 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "input_tb_behav -key {Behavioral:sim_2:Functional:input_tb} -tclbatch {input_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source input_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'input_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 892.164 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open {E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd} w ]
+add_files {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd}}
+close [ open {E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd} w ]
+add_files {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd}}
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_circuit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:21]
+ERROR: [VRFC 10-91] clk is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:23]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:10]
+INFO: [VRFC 10-240] VHDL file E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_circuit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 2 [E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd:44]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit input_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_circuit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.num2 [num2_default]
+Compiling architecture behavioral of entity xil_defaultlib.num4 [num4_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_circuit [input_circuit_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_tb
+Built simulation snapshot input_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/My -notrace
+couldn't read file "E:/My": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May 03 20:07:41 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "input_tb_behav -key {Behavioral:sim_2:Functional:input_tb} -tclbatch {input_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source input_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'input_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 892.164 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_circuit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.num2 [num2_default]
+Compiling architecture behavioral of entity xil_defaultlib.num4 [num4_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_circuit [input_circuit_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_tb
+Built simulation snapshot input_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/My -notrace
+couldn't read file "E:/My": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May 03 20:08:58 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "input_tb_behav -key {Behavioral:sim_2:Functional:input_tb} -tclbatch {input_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source input_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'input_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 894.895 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_circuit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.num2 [num2_default]
+Compiling architecture behavioral of entity xil_defaultlib.num4 [num4_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_circuit [input_circuit_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_tb
+Built simulation snapshot input_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/My -notrace
+couldn't read file "E:/My": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May 03 20:11:36 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "input_tb_behav -key {Behavioral:sim_2:Functional:input_tb} -tclbatch {input_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source input_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'input_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 894.895 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_circuit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+ERROR: [VRFC 10-91] clk_perid is not declared [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:41]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd:10]
+INFO: [VRFC 10-240] VHDL file E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_circuit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.num2 [num2_default]
+Compiling architecture behavioral of entity xil_defaultlib.num4 [num4_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_circuit [input_circuit_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_tb
+Built simulation snapshot input_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/My -notrace
+couldn't read file "E:/My": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May 03 20:12:51 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "input_tb_behav -key {Behavioral:sim_2:Functional:input_tb} -tclbatch {input_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source input_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'input_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 895.922 ; gain = 1.027
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_circuit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.num2 [num2_default]
+Compiling architecture behavioral of entity xil_defaultlib.num4 [num4_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_circuit [input_circuit_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_tb
+Built simulation snapshot input_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/My -notrace
+couldn't read file "E:/My": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May 03 20:13:47 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "input_tb_behav -key {Behavioral:sim_2:Functional:input_tb} -tclbatch {input_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source input_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'input_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 895.922 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset sim_2
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-37] Inspecting design source files for 'input_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+"xvhdl -m64 --relax -prj input_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num4
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/num2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity num2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/input_circuit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_circuit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/My Programs/VHDL/semester_project/semester_project.srcs/sim_2/new/input_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity input_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 026277c8959e43358eb3f1c0c9f5f9fa --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot input_tb_behav xil_defaultlib.input_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.num2 [num2_default]
+Compiling architecture behavioral of entity xil_defaultlib.num4 [num4_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_circuit [input_circuit_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_tb
+Built simulation snapshot input_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/My -notrace
+couldn't read file "E:/My": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May 03 20:14:16 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/My Programs/VHDL/semester_project/semester_project.sim/sim_2/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "input_tb_behav -key {Behavioral:sim_2:Functional:input_tb} -tclbatch {input_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source input_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'input_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 895.922 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+import_files -norecurse {{E:/My Programs/VHDL/semester_project/semester_project.srcs/sources_1/new/displ7seg.vhd}}
+add_files -fileset constrs_1 -norecurse C:/Users/Marian/Desktop/Nexys4DDR_Master.xdc
+import_files -fileset constrs_1 C:/Users/Marian/Desktop/Nexys4DDR_Master.xdc
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 03 22:23:05 2017...
